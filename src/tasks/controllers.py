@@ -9,7 +9,6 @@ def create_tasks_ctrl(task):
         new_task = Task(
             description=task.description,
             agent_id=task.agent_id,
-            topic=task.topic,
             expected_output=task.expected_output,
         )
         db.add(new_task)
